@@ -5,9 +5,9 @@ const Header = () => {
     <>
     <nav className="navbar navbar-dark bg-light">
         <h1>Todo List</h1>
-       <a className="navbar-brand" href="#">
+       <div className="navbar-brand">
        <img src="https://cdn-icons-png.flaticon.com/512/1/1560.png" width="30" height="30" alt=""/>
-     </a>
+     </div>
     </nav>
     </>
   )

@@ -15,7 +15,7 @@ const Update = () => {
         e.preventDefault();
         const id=params.id;
         try {
-            await axios.put(`${process.env.REACT}/todo/update/${id}`,{
+            await axios.put(`${process.env.REACT_APP_API}/todo/update/${id}`,{
                 title,description
             })
             setTitle('');

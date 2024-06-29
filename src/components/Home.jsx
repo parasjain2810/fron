@@ -13,7 +13,8 @@ const Home = () => {
         e.preventDefault();
         setDisable(true);
         try {
-            await axios.post(`http://localhost:5000/todo/create`,{
+            console.log(process.env.REACT_APP_API)
+            await axios.post(`${process.env.REACT_APP_API}/todo/create`,{
                 title,description
             })
             setTitle('');
